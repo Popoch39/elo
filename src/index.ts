@@ -1,1 +1,4 @@
-const a = 1;
+export * from "./SayHello";
+
+// types
+export * from "./types/types";
