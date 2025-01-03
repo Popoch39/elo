@@ -1,4 +1,4 @@
 const a = (a: number) => {
   return "hello world !";
 };
-a(false);
+a(1);
