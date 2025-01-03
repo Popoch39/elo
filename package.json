@@ -1,11 +1,11 @@
 {
   "name": "elo_popoch",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup ./src/index.ts --format cjs,esm --dts",
+    "build": "tsup",
     "lint": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,7 +25,6 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.11",
-    "elo_popoch": "file:elo_popoch-0.0.3.tgz"
+    "@changesets/cli": "^2.27.11"
   }
 }
