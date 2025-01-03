@@ -6,6 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
+    "dev": "tsc -w",
+    "exec": "npm run build && node dist/index.js",
     "lint": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
