@@ -8,14 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: npm/action-setup@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          version: 7
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: "pnpm"
+          node-version: 18
 
-      - run: pnpm install --frozen-lockfile
+      - run: npm install --frozen-lockfile
       - run: npm run lint && npm run build
